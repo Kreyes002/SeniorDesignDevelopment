@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+body{
+    /*FIX ME...Mobile Image Distorted*/  
+    min-height: 100vh; 
+    background-image: url(TesoroImage.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+} 
+nav{
+    position:fixed;
+    width: 100%; 
+    background-color: rgb(21,44,58); 
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1); 
+}
+nav ul{
+    padding-top: 13px;
+    height: 42px;
+    width: 100%;
+    list-style: none;
+    display: flex; 
+    justify-content: flex-end;
+    text-align: center;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    color: white; 
+}
+nav a:hover{
+    height: 90%;
+    background-color: #0c4a6f; 
+}
+/*
+<style="height: 100%; width: 100%; object-fit: contain">
+
+nav li:first-child{
+    margin-right: 900px;
+}
+*/
+
+.sidebar{
+    position: fixed; 
+    top: 0;
+    right: 0;
+    height: 100vh; 
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.345);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%; 
+}
+.sidebar a{
+     width: 100%; 
+}
+.menu-button{
+    display: none;
+}
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%; 
+    }
+}
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.345);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.container {
+    width: 25vw; /* Width of the boxes */
+    height: 40vh; /* Height of the boxes */
+    justify-content: center;
+    display: flex;
+    gap: 20px; /* Space between the boxes */
+
+}
+
+.box {
+    background-color: #152C3A;
+    width: 150vh; /* Width of the boxes */
+    height: 50vh; /* Height of the boxes */
+    color: white; /* Text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  
+}
+.rectangle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    padding-top: 2%;
+    background-color: #ffffff;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.videoBox {
+    background-color: #ffffff;
+    color: black; /* Change to black for visibility */
+    width: 100%; /* Full width */
+    height: auto; /* Adjust as necessary */
+    display: flex;
+    justify-content: center; /* Aligns content to the left */
+    align-items: center;
+    padding: 20px; /* Add padding if needed */
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.videoCenter {
+    width: 85%; 
+    border-radius: 3% / 7%;
+    color: black; 
+    /* Removed padding-top and padding-bottom for more flexible positioning */
+}
+
+
+.videoHeader{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color:black; 
+    text-align: center;
+}
+
+
+
+
+
