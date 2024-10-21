@@ -186,7 +186,7 @@ nav li:first-child{
 
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 350;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -211,9 +211,14 @@ nav li:first-child{
 
 .search-bar {
     display: flex;
+    width: 150%;
 }
 
 .btn {
-    margin-left: 10px; /* Adjust the value as needed for spacing */
+    margin-left: 0px; /* Adjust the value as needed for spacing */
+    
 }
+
+
+
 
