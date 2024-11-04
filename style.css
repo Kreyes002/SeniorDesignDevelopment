@@ -1,21 +1,19 @@
+
 *{
     margin: 0;
     padding: 0; 
 }
 body{
-    /*FIX ME...Mobile Image Distorted*/  
-    min-height: 100vh; 
-    background-image: url(TesoroImage.jpg);
-    background-size: contain;
+    min-height: 100vh;
+    background-image: url('/Users/kevinsimac/Desktop/TesoroImage (1).jpg');
+    background-size: cover; /* Change to cover to maintain aspect ratio */
     background-repeat: no-repeat;
     background-position: center;
     font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
     background-color: white; 
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    
-} 
+    background-attachment: fixed; /* Keep this if you want a fixed background */
+}
+
 nav{
     position:fixed;
     width: 100%; 
@@ -159,6 +157,7 @@ nav li:first-child{
     text-align: center;
     width: 100vw;
     height: 100vh;
+
 }
 
 .videoBox {
@@ -251,7 +250,7 @@ nav li:first-child{
 }
 
 .cust_logos{
-    padding-top: 2%;
+    padding: 2% 5% 0% 5%; 
     background-color: #ffffff;
     text-align: center;
     filter: grayscale(100%);
@@ -260,6 +259,8 @@ nav li:first-child{
 
 footer{
     background-color: #ffffff;
+    
+    
 }
 
 .contact-rectangle{
@@ -276,17 +277,27 @@ footer{
     align-content: center;
 }
 
+.container-footer{
+    background-color: #ffffff;
+    padding-left: 5%;
+    padding-right: 5%;
 
+}
 
+.api-rectangle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    gap: 2%;
 
-
-
-
-
-
-
-
-
+}
 
 
 
